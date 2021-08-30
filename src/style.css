@@ -1,0 +1,70 @@
+*,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  padding: 10px;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.main {
+  align-items: center;
+  justify-content: space-around;
+  margin: 120px 170px;
+}
+
+#board {
+  list-style-type: none;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+
+#board li,
+.input {
+  padding: 10px;
+}
+
+#board li:nth-child(even) {
+  background-color: gray;
+}
+
+form {
+  flex-direction: column;
+  text-align: center;
+}
+
+.scores {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 45%;
+}
+
+.input {
+  margin-bottom: 10px;
+}
+
+.submit {
+  justify-content: flex-end;
+}
+
+#submitBtn {
+  margin: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  width: 100px;
+}
