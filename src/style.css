@@ -45,7 +45,7 @@ h1 {
 }
 
 #board li:nth-child(even) {
-  background-color: gray;
+  background-color: rgb(170, 167, 167);
 }
 
 #form {

@@ -3,7 +3,7 @@ import getScores from './getScores.js';
 import sendScores from './sendScores.js';
 import displayScores from './displayScores.js';
 
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/m9e3Impvt2wx97uAKf2Q/scores/';
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/GdLxJPvwrtFQVZGkA1hP/scores/';
 
 const refreshBtn = document.getElementById('refreshBtn');
 const form = document.getElementById('form');
