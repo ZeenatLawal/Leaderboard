@@ -1,6 +1,8 @@
 # Leaderboard
 > The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved with the external Leaderboard API service.
 
+![screenshot](./images/Leaderboard.png)
+
 ## Built With
 
 - HTML
@@ -16,7 +18,7 @@
 
 ### To get a local copy run the following steps:
 
-- [Copy this link](https://github.com/ZeenatLawal/Leaderboard.git)
+- Copy this link `https://github.com/ZeenatLawal/Leaderboard.git`
 - Open your terminal or command line
 - Run `git clone` and paste the link
 - Open the folder with your code editor
