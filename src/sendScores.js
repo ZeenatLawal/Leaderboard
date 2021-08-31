@@ -1,5 +1,8 @@
 const fetch = require('node-fetch');
 
+const inputName = document.getElementById('inputName');
+const inputScore = document.getElementById('inputScore');
+
 const sendScores = async (url) => {
   const result = await fetch(url, {
     method: 'POST',
@@ -7,10 +10,13 @@ const sendScores = async (url) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      user: 'Zeenat Lawal',
-      score: 87,
+      user: inputName.value,
+      score: inputScore.value,
     }),
   });
+
+  inputName.value = '';
+  inputScore.value = '';
   return result.json();
 };
 
