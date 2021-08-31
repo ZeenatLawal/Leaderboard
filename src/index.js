@@ -1,14 +1,32 @@
-import _ from 'lodash';
 import './style.css';
 
-function component() {
-  const element = document.createElement('div');
+const board = document.getElementById('board');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+const myScores = [{
+  name: 'Zeenat',
+  score: 100,
+},
+{
+  name: 'Safa',
+  score: 100,
+},
+{
+  name: 'Aleks',
+  score: 100,
+}];
 
-  return element;
+function displayScores() {
+  board.innerHTML = '';
+  myScores.forEach((myScore) => {
+    const content = `${myScore.name}: ${myScore.score}`;
+
+    const listItem = document.createElement('li');
+    listItem.innerText = content;
+    listItem.className = 'list-item';
+    board.appendChild(listItem);
+  });
 }
 
-document.body.appendChild(component());
+window.addEventListener('load', () => {
+  displayScores();
+});
