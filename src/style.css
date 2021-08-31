@@ -13,8 +13,12 @@ h1 {
   text-align: left;
 }
 
-h2 {
+.scores h2 {
   padding: 20px 0;
+}
+
+#form h2 {
+  padding: 25px 0;
 }
 
 .flex {
