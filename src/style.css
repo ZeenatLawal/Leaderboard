@@ -17,7 +17,7 @@ h1 {
   padding: 20px 0;
 }
 
-#form h2 {
+#formCon h2 {
   padding: 25px 0;
 }
 
@@ -48,7 +48,7 @@ h1 {
   background-color: gray;
 }
 
-form {
+#form {
   flex-direction: column;
   text-align: center;
 }
