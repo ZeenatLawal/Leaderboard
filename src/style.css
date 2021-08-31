@@ -13,6 +13,10 @@ h1 {
   text-align: left;
 }
 
+h2 {
+  padding: 20px 0;
+}
+
 .flex {
   display: flex;
 }
@@ -48,7 +52,6 @@ form {
 .scores {
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 
 .card {

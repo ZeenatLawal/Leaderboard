@@ -17,14 +17,14 @@ const myScores = [{
 
 function displayScores() {
   board.innerHTML = '';
-  for (let i = 0; i < myScores.length; i += 1) {
-    const content = `${myScores[i].name}: ${myScores[i].score}`;
+  myScores.forEach((myScore) => {
+    const content = `${myScore.name}: ${myScore.score}`;
 
     const listItem = document.createElement('li');
     listItem.innerText = content;
     listItem.className = 'list-item';
     board.appendChild(listItem);
-  }
+  });
 }
 
 window.addEventListener('load', () => {
