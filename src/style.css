@@ -63,7 +63,8 @@ form {
   justify-content: flex-end;
 }
 
-#submitBtn {
+#submitBtn,
+#refreshBtn {
   margin: 10px;
   padding: 8px;
   border-radius: 6px;
