@@ -1,7 +1,7 @@
 # Leaderboard
 > The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved with the external Leaderboard API service.
 
-![screenshot](./images/Leaderboard.png)
+![screenshot](./images/leaderboard.png)
 
 ## Built With
 
@@ -27,6 +27,16 @@
 - Run `npm run build`
 - Run `npm run start` to launch the server.
 
+### To create your own game ID with this API (Using Postman App)
+
+- Open your Postman App
+- Enter this URL `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/`
+- Change the action to POST
+- Go to the Body tab, select raw and JSON as the format
+- Paste this in the body field `{"name": "Your game name"}`
+- Click send and you should get a result with the unique identifier e.g. `Zl4d7IVkemOTTVg2fUdz`
+- Open the `index.js` file and replace the ID in the URL variable with your ID
+- Save the file and launch the server, your recent scores list should be empty
 ## Author
 
 👤 **Zeenat Lawal**
